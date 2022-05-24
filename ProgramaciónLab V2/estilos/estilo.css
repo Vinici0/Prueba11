@@ -1,0 +1,697 @@
+.loader_bg {
+  position: fixed;
+  z-index: 999999;
+  background: rgb(51, 51, 51);
+  width: 100%;
+  height: 100%;
+}
+
+.loader {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: calc(55vh - 75px);
+  left: calc(50vw - 75px);
+  background-image: url(https://mellowmushroom.com/wp-content/themes/mm/images/maker.gif?1638088195);
+  background-repeat: no-repeat;
+}
+
+@keyframes loader {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+
+/*ESTILOS BIENVENIDA*/
+  
+.container{
+  text-align: center;
+  background: #FFFAE0;
+  position: absolute;
+  top: 3em;
+  right: 0;
+  bottom: 3em;
+  left: 0; 
+}
+.container a{
+  text-decoration: none;
+  }
+.container span {
+  font-size: 120pt;
+  font-weight: bold;
+  position: relative;
+  font-family: "Kavoon";
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+  }
+  
+.container span::after {
+  position: absolute;
+  height: 200%;
+  width: 300px;
+  top: 80%;
+  left: 0;
+  transform: rotateX(50deg);
+  }
+
+.container span:hover {
+  filter: contrast(250%);
+  }
+  
+.container span:nth-child(1) {
+  color: #9c0c0c;
+    }
+.container span:nth-child(2) {
+  color: #73706F;
+    }
+
+
+#h1 {
+  font-family: sans-serif;
+  text-align: center;
+  font-size: 120px;
+  padding-left: 10px;
+  font-weight: 800;
+  color: transparent;
+  background-position: center;
+  -webkit-text-fill-color: rgb(238, 238, 238);
+  -webkit-text-stroke: 1px black;
+}
+
+
+/*Estilos generales*/
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background: rgba(0, 0, 0, 0.788);
+}
+
+a {
+  color: #529125;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #529125;
+}
+
+a:hover {
+  color: #285616;
+}
+
+.red {
+  color: #9b2422 !important;
+}
+
+.blue {
+  color: #0c73f2 !important;
+}
+
+.orange {
+  color: #14533b !important;
+}
+
+.icon {
+  font-family: "icon";
+  float: left;
+  margin-right: 5px;
+  margin-top: -2px;
+}
+
+.clearfix {
+  float: none;
+  clear: both;
+}
+
+.prueba{
+  text-align: center;
+}
+
+/*Formularios*/
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+  border: 1px solid #c9c9c9;
+  box-shadow: 0px 0px 2px #cccccc inset;
+  background-color: white;
+  padding: 1px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  color: gray;
+  transition: all 300ms;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+select:focus {
+  border: 1px solid #70b231;
+  color: black;
+}
+
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+button {
+  display: block;
+  border-radius: 2px;
+  border: 1px solid green;
+  width: 60px;
+  padding: 3px;
+  color: white;
+  background-color: #70b231;
+  cursor: pointer;
+}
+
+input[type="button"]:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+button:hover {
+  box-shadow: 0px 0px 2px gray;
+}
+
+input[type="button"]:active,
+input[type="submit"]:active,
+input[type="reset"]:active,
+button:active {
+  box-shadow: 0px 0px 3px gray inset;
+  text-shadow: 0px 0px 1px #cccccc;
+}
+
+/*Cabecera*/
+#header {
+  min-width: 102px;
+  width: 100%;
+  height: 400px;
+  margin: auto;
+  background-image: url(https://acegif.com/wp-content/gifs/pizza-37.gif);
+  background-position: center;
+  /*No eliminar esto porque si esta bien*/
+}
+
+#header a {
+  text-decoration: none;
+}
+
+#header #logotipo {
+  width: 770px;
+  margin: 0px auto;
+  padding-top: 20px;
+}
+
+#header #logotipo img {
+  display: block;
+  text-align: center;
+  margin: 0px auto;
+  width: 140px;
+}
+
+/*#header h1 {
+    text-align: center;
+    font-size: 40px;
+    color: #70b231;
+    font-family: "nevis";
+    letter-spacing: 4px;
+    margin-top: 10px;
+    text-shadow: 0px 2px 1px #333333;
+    transition: all 300ms;
+}
+
+#header h1:hover {
+    text-shadow: 0px 2px 1px #333333, 0px 0px 4px #70b231;
+}*/
+
+#header h1 a {
+  color: #70b231;
+}
+
+/*Barra de navegación*/
+#nav {
+  width: 100%;
+  background-color: #333;
+  color: white;
+  height: 40px;
+  font-family: sans-serif;
+  font-size: 14px;
+  box-shadow: 0px 0px 2px gray;
+}
+
+#nav ul {
+  list-style: none;
+  text-decoration: none;
+  margin: 0px auto;
+  width: 70%;
+}
+
+#nav > ul > li {
+  line-height: 40px;
+  float: left;
+  border-right: 1px solid gray;
+  transition: all 300ms;
+}
+
+#nav > ul > li a {
+  display: block;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: white;
+  text-decoration: none;
+}
+
+#nav > ul > li > a:first-child {
+  border-left: 1px solid gray;
+}
+
+#nav > ul li:hover {
+  background-color: #bda022;
+  box-shadow: 0px 0px 4px rgb(141, 78, 5) inset;
+}
+
+/*Menú desplegable*/
+
+#nav > ul > li > ul {
+  display: none;
+  position: absolute;
+  width: 160px;
+  box-shadow: 0px 2px 2px gray;
+  z-index: 1;
+}
+
+#nav > ul > li:hover > ul {
+  display: block;
+}
+
+#nav > ul > li:hover > ul > li {
+  background-color: #f2f1f0;
+  border-bottom: 1px solid #d6d6d6;
+  padding: 8px;
+  line-height: 25px;
+  font-size: 13px;
+  transition: all 300ms;
+}
+
+#nav > ul > li:hover > ul > li a {
+  color: #666;
+}
+
+#nav > ul > li:hover > ul > li:hover {
+  box-shadow: 0px 0px 6px #cccccc inset;
+}
+
+/*Contenido*/
+#content {
+  width: 1250px;
+  min-height: 1100px;
+  margin: 0px auto;
+  font-family: sans-serif, Arial, Helvetica;
+  background: url(https://mellowmushroom.com/wp-content/themes/mm/images/svg/Orbit-Mobile-80589.svg.jpg),
+    url(https://mellowmushroom.com/wp-content/themes/mm/images/svg/Orbit-XLarge_V2.svg);
+}
+
+/*Barra lateral*/
+#aside,
+#frase {
+  width: 200px;
+  float: left;
+  margin: 30px;
+  background-color: rgba(255, 255, 255, 0.658);
+  border: 1px solid #cccccc;
+  box-shadow: 0px 2px 2px #cccccc;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#frase {
+  width: 180px;
+  padding: 10px;
+  font-size: 14px;
+  font-family: sans-serif;
+}
+
+#aside .widget {
+  display: block;
+  width: 180px;
+  margin: 5px auto;
+  padding: 8px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 14px;
+  border-bottom: 1px dashed #333333;
+}
+
+#aside .widget:last-child {
+  margin-bottom: 20px;
+}
+
+#aside h3 {
+  display: block;
+  color: #333;
+  width: 100%;
+  text-align: center;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  margin-bottom: 15px;
+  background-color: #f2f3f2c4;
+  border: 1px solid #cccccc;
+  border-left: none;
+  border-right: none;
+}
+
+#aside li {
+  margin-top: 8px;
+  margin-bottom: 5px;
+  margin-left: 20px;
+  list-style: square;
+}
+
+/*Formularios barra lateral*/
+#aside div label,
+#aside div input[type="text"],
+#aside div input[type="email"],
+#aside div input[type="password"],
+#aside div a {
+  display: block;
+  width: 95%;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+#aside div input[type="button"],
+#aside div input[type="submit"],
+#aside div button {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+#aside input,
+#aside label {
+  margin: 0 auto;
+  text-align: center;
+}
+
+/*Secciones*/
+
+#sections {
+  float: right;
+  width: 75%;
+  font-family: sans-serif, Arial, Helvetica;
+  margin-right: 20px;
+}
+
+#section 
+
+
+
+#section 
+
+/* CALIFICACIÓN TABLA */
+table {
+  border: 2px solid rgb(250, 248, 248);
+  /* border-collapse: collapse; */
+  border-radius: 20px;
+  width: 100%;
+  text-align: center;
+  letter-spacing: 6px;
+  font-family: Verdana, sans-serif;
+  font-weight: 700;
+}
+
+.contect-cali h3 {
+  letter-spacing: 0.3rem;
+  font-size: 1.5rem;
+  display: block;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+table tr td {
+  padding: 20px;
+}
+
+table .cali {
+  transition: 0.2s all linear;
+  cursor: pointer;
+}
+
+table #cali-1:hover {
+  background: rgb(156, 18, 18);
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  font-size: 1.2rem;
+  padding: 15px;
+}
+table #cali-2:hover {
+  background: rgba(156, 18, 18, 0.664);
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  font-size: 1.2rem;
+  padding: 15px;
+}
+table #cali-3:hover {
+  background: rgb(18, 151, 156);
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  font-size: 1.2rem;
+  padding: 15px;
+}
+table #cali-4:hover {
+  background: rgb(4, 97, 126);
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  font-size: 1.2rem;
+  padding: 15px;
+}
+table #cali-5:hover {
+  background: rgba(15, 148, 55, 0.932);
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  font-size: 1.2rem;
+  padding: 15px;
+}
+
+.date {
+  color: gray;
+  font-size: 14px;
+}
+
+
+
+#history {
+  float: right;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+/*Pie de página*/
+.footer {
+  width: 100%;
+  margin-top: 50px;
+  border: none;
+  background-color: rgb(204, 144, 66);
+  color: rgb(17, 17, 17);
+}
+
+.footer .container3 {
+  display: flex;
+  width: 85%;
+  margin: auto;
+  height: 530px;
+}
+
+.container3 #cajas {
+  margin-top: 80px;
+  line-height: 170%;
+  width: 35%;
+  height: 500px;
+  display: block;
+  padding-left: 3px;
+  padding-right: 20px;
+  text-align: left;
+}
+
+.container3 h3 {
+  font-family: "Segoe UI", sans-serif;
+  font-size: 13pt;
+}
+
+.footer .itin {
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 30px;
+}
+
+.footer ul {
+  list-style: none;
+  font-size: 12pt;
+}
+
+.footer a {
+  text-decoration: none;
+  color: rgb(41, 41, 41);
+  font-family: "Segoe UI", sans-serif;
+  font-size: 11pt;
+}
+
+.derechos {
+  height: 60px;
+  background-color: rgb(20, 20, 20);
+  color: white;
+}
+
+.derechos p {
+  padding-top: 20px;
+  text-align: center;
+}
+
+/* ------ ------ FOOTER ------- -----*/
+
+
+
+footer .redes-sociales .contenedor {
+  background: #1e2b38;
+  padding: 60px 0;
+}
+
+footer .contenedor-form {
+  display: grid;
+
+  justify-content: center;
+  margin: 25px;
+}
+
+footer .redes-sociales .contenedor {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-content: center;
+}
+
+/* Formulario Editar Usuario*/
+.contenedor-form-usuario {
+  background-color: #fff;
+}
+.form-usuario {
+  width: 700px;
+  position: relative;
+  transform: translateX(-50%);
+  left: 50%;
+  background-color: #c5e2f6;
+  padding: 50px;
+}
+
+.form-usuario__dividir {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.form-usuario__dividir label,
+.form-usuario__dividir input {
+  display: block;
+  height: 25px;
+}
+.form-usuario__dividir button {
+  background-color: #4caf50; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.form-usuario__dividir button {
+  background-color: white;
+  color: black;
+  border: 2px solid #4caf50;
+}
+
+.form-usuario__dividir button:hover {
+  background-color: #4caf50;
+  color: white;
+}
+
+.mensaje {
+  text-align: center;
+  color: #a4a4a4;
+}
+
+/*----------------Card-----------------*/
+.card {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px;
+  background: #fff;
+  border-radius: 2px;
+  display: inline-block;
+  height: 300px;
+  margin: 1rem;
+  position: relative;
+  width: 500px;
+}
+.card h3 {
+  text-align: center;
+}
+
+.card-1 {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+/* ----------------eliminar cuenta----------------- */
+.form-eliminar-cuenta {
+  text-align: center;
+}
+
+.boton-eliminar-cuenta {
+  background-color: #af4c4c; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+
+  background-color: white;
+  color: black;
+  border: 2px solid #af4c4c;
+}
+.boton-eliminar-cuenta:hover {
+  background-color: #af4c4c;
+  color: white;
+}
+
+footer .contacto .formulario input[type="text"],
+footer .contacto .formulario input[type="email"],
+footer .contacto .formulario textarea {
+  width: 100%;
+}
+
+.tesArea {
+  width: 70%;
+}
